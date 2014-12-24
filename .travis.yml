@@ -1,3 +1,11 @@
+# Use Docker container (instead of OpenVZ),
+# which also provides S3 file caching for OSS projects
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+ 
 language: node_js
 node_js:
   - "0.10"
